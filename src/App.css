@@ -1,0 +1,62 @@
+body{
+    margin:0;
+    font-family :'Times New Roman', Times, serif;
+    color:black;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(214, 199, 199);
+    opacity: 1; /* Firefox */
+
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(194, 186, 186);
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(165, 151, 151);
+  }
+.nav-container{
+    background-color:  #9b9b9b;
+    padding : 10px 300px;
+    border:1px solid grey;
+    font-size:12px;
+    width:100%;
+    box-sizing:border-box;
+    display:flex;
+    justify-content:space-around;
+}
+.search-container {
+    max-width:500px;
+    margin : 2px;
+    margin-bottom : 40px;
+}
+
+.search-container input {
+    font-size  :18px;
+    width :80%;
+    outline:none;
+    padding:4px;
+    border-radius:1px solid #777272;
+}
+.movie-list-container {
+    max-width:1000px;
+    margin:20px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+.movie-card {
+    width:200px;
+    height:120px;
+    padding: 0px 10px 20px 10px;
+    border-radius:12px;
+    box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+}
+.movie-body h2 {
+    margin-top : 12px;
+    color:#242424;
+    outline :none;
+
+}
