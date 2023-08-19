@@ -20,7 +20,7 @@ body{
     background-color:  #9b9b9b;
     padding : 10px 300px;
     border:1px solid grey;
-    font-size:12px;
+    font-size:2px;
     width:100%;
     box-sizing:border-box;
     display:flex;
@@ -33,7 +33,7 @@ body{
 }
 
 .search-container input {
-    font-size  :18px;
+    font-size  :08px;
     width :80%;
     outline:none;
     padding:4px;
@@ -49,14 +49,31 @@ body{
 }
 .movie-card {
     width:200px;
-    height:120px;
+    height:250px;
     padding: 0px 10px 20px 10px;
     border-radius:12px;
-    box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 .movie-body h2 {
-    margin-top : 12px;
+    margin-top : 1px;
     color:#242424;
     outline :none;
+    font-size: 14px;
 
+}
+.movie-body p{
+    color:#242424;
+    margin-top:10px;
+    outline:none;
+    font-size: 12px;
+}
+.movie-poster{
+    width:100%;
+    height:200px;
+}
+.movie-poster img{
+    width:100%;
+    height:100%;
+    object-fit:fill;
+    object-position:center
 }
