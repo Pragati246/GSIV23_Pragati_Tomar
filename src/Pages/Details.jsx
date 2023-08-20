@@ -40,10 +40,10 @@ const Details = () => {
       </Link>
         <h3>Movies</h3>
         <div className="homeicon-detail">
-        </div>
         <Link to="/">
           <HomeIcon />
         </Link>
+        </div>
       </nav>
       {movie != {} && (
         <div className="movie-detail-container">

@@ -50,20 +50,18 @@ a{
   justify-content:right;
   margin-left: 230px;
 }
-.homeicon-detail{
-  display:flex;
-  justify-content:right;
-  margin-left: 1400px;
-
+.homeicon-detail {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding: 0 10px;
 }
-
 .navbar-details-list {
   width:100%;
   margin : 2px;
   margin-bottom : 40px;
   padding:4px;
   border-radius:1px solid #9b9999;
-  
 }
 
 .search-container input {
@@ -121,8 +119,19 @@ a{
 
 .movie-detail-poster img {
   width: 200px; 
-  height:300px; /* Set height to 200px */
+  height:300px; /* Set height to 300px */
   border-radius: 5px;
   object-position:left;
   border: 1px solid #ababab;
 }
+@media (max-width: 512px) {
+  /* For screens with a maximum width of 512px */
+  .homeicon,
+  .homeicon-detail {
+    justify-content: flex-start; /* Left align the icons */
+    margin-left: 10px; /* Adjusted to provide consistent spacing */
+  }
+}
+
+
+
