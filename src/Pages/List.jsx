@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import SearchIcon from '@mui/icons-material/Search';
+import HomeIcon from '@mui/icons-material/Home';
+import {Link} from 'react-router-dom'
 
 const List = () => {
   const [movies, setMovies] = useState([]);
@@ -86,7 +88,8 @@ const List = () => {
 
   return (
     <>
-      <div className="search-container">
+      <nav className="navbar-details-list">
+        <div className="search-container">
         <SearchIcon />
         <input
           type="text"
@@ -94,7 +97,13 @@ const List = () => {
           value={searchMovie}
           onChange={handleSearch}
         />
-      </div>
+        <div className="homeicon">
+          <Link to="/">
+            <HomeIcon />
+          </Link>
+        </div>
+        </div>
+      </nav>
       <div className="movie-list-container">
         {filteredMovies.map((movie, index) => {
           if (index === filteredMovies.length - 1) {
@@ -118,8 +127,9 @@ const List = () => {
 
 const posterBaseUrl = "https://image.tmdb.org/t/p/original";
 
-function MovieCard({ original_title, vote_average, overview, poster_path }) {
+function MovieCard({ original_title, vote_average, overview, poster_path,id }) {
   return (
+    <Link to={"/details/"+id}>
     <div className="movie-card">
       <div className="movie-poster">
         <img src={posterBaseUrl + poster_path} alt="dummy" />
@@ -136,6 +146,7 @@ function MovieCard({ original_title, vote_average, overview, poster_path }) {
         <p>{vote_average}</p>
       </div>
     </div>
+    </Link>
   );
 }
 

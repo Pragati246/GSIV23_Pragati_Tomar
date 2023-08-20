@@ -9,12 +9,12 @@ function App() {
     <div>
       <BrowserRouter>
         <nav className="nav-container">
-          <NavLink to="/">List</NavLink> &nbsp;
-          <NavLink to="/Details">Details</NavLink>
+          <NavLink to="/"></NavLink> &nbsp;
+          <NavLink to="/Details"></NavLink>
           </nav>
         <Routes>
           <Route path="/" element={<List/>}/>
-          <Route path="/Details" element={<Details/>}/>
+          <Route path="/Details/:movieId" element={<Details/>}/>
         </Routes>
       </BrowserRouter>
 
